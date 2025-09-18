@@ -32,11 +32,11 @@ export default function App(){
   return (
     <><div style={{ maxWidth: 720, margin: '2rem auto', padding: 16 }}>
       <h2>URL Shortner</h2>
-      <input> value={url}
-        Onchange={e => setUrl(e.target.value)}
+      <input value={url}
+        onChange={e => setUrl(e.target.value)}
         placeholder="https://example.com"
         style={{ width: '100%', padding: 8 }}
-      </input>
+      />
     <div style={{ marginTop: 8 }}>
         <button onClick={handleShorten}
           disabled={loading}>{loading ? ' ...' : 'Shorten'}</button>
